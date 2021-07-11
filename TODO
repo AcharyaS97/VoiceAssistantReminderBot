@@ -1,0 +1,52 @@
+
+Web App UI:
+    ☐ Create Angular App
+    ☐ Add Google Authentication
+    ☐ Create UI to create tasks, 
+    Create ui to save checklists on tasks
+    Create ui to save task names and accepted phrases
+    Create ui to save name
+    ☐ Make UI save to backend
+
+Web App Backend:
+  Store tasks
+  Store user information, associate with tasks
+  Create backend api to save tasks, load them
+
+Action Webhook:
+✔ Have it send back a simple response @done(21-07-10 07:35)
+
+- Update to do db call based on the given task parameter
+
+- Update to use the user id passed in
+
+Action:
+  - Get base conversation working
+      User:"hey checklist bot"
+      assistant:'hey, what's up?'
+      u : 'begin action lawn mowing'
+      a : 'great!'
+      a : Remember, 
+          - Put the mower away when you're done
+          - Spray the mower with water
+
+      a : would you like to repeat these reminders?
+
+      u: No
+
+  - Pu
+
+# Webhook
+  ☐ Angular App to manage/create reminders
+  
+  Create Azure subscription
+
+  Deploy test azure function
+
+  Add oauth link information to app
+
+  Test it
+
+
+    
+
