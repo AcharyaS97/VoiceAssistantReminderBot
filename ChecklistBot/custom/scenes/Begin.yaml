@@ -1,0 +1,19 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    webhookHandler: GetChecklist
+  transitionToScene: SelectAction
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: Great, what are you doing?
+slots:
+- commitBehavior:
+    writeSessionParam: task_value
+  name: task_value
+  required: true
+  type:
+    name: Task

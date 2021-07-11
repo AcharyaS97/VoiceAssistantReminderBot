@@ -1,0 +1,5 @@
+handlers:
+- name: GetChecklist
+httpsEndpoint:
+  baseUrl: https://us-central1-checklistbot-b9f66.cloudfunctions.net/fullfillment
+  endpointApiVersion: 2

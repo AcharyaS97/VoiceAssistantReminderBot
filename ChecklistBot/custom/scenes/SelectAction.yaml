@@ -1,0 +1,10 @@
+intentEvents:
+- intent: begin_action
+  transitionToScene: Begin
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: What do you want to do?
