@@ -1,8 +1,8 @@
 conditionalEvents:
-- condition: scene.slots.status == "FINAL"
+- condition: (scene.slots.status == "FINAL")
   handler:
-    webhookHandler: GetChecklist
-  transitionToScene: SelectAction
+    webhookHandler: begin_action
+  transitionToScene: ReciteChecklistSteps
 onEnter:
   staticPrompt:
     candidates:

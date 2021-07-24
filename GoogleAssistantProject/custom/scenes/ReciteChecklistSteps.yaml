@@ -1,0 +1,22 @@
+conditionalEvents:
+- condition: user.params.taskId == "0"
+  handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: Remember to tell me when you're done and i'll remind you again!
+- condition: user.params.taskId == "-1"
+  handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: There was an error
+  transitionToScene: End
+- condition: user.params.taskId != "0"
+  handler:
+    webhookHandler: read_checklist_item
+  transitionToScene: ReciteChecklistSteps

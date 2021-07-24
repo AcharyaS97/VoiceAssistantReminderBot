@@ -1,3 +1,6 @@
+accountLinking:
+  enableAccountCreation: true
+  linkingType: GOOGLE_SIGN_IN
 category: UTILITIES
 defaultLocale: en
 localizedSettings:

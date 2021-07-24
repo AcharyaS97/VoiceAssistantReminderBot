@@ -1,0 +1,7 @@
+conditionalEvents:
+- condition: (user.accountLinkingStatus == "LINKED")
+  transitionToScene: SelectAction
+- condition: (user.verificationStatus == "VERIFIED")
+  transitionToScene: CheckAccountStatus_AccountLinking
+- condition: (user.verificationStatus != "VERIFIED")
+  transitionToScene: GuestScene
