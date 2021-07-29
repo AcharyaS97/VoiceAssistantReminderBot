@@ -1,14 +1,13 @@
 
 Web App UI:
-    ☐ Create Angular App
     ☐ Add Google Authentication
-    ☐ Create UI to create tasks, 
+    ☐ Create UI to create tasks 
     Create ui to save checklists on tasks
     Create ui to save task names and accepted phrases
     Create ui to save name
     ☐ Make UI save to backend
 
-Web App Backend:
+Cloud Functions:
   Store tasks
   Store user information, associate with tasks
   Create backend api to save tasks, load them
@@ -21,23 +20,18 @@ Action Webhook:
 - Update to use the user id passed in
 
 Action:
-  - Get base conversation working
+  ✔ Get base conversation working @done(21-07-13 13:35)
       User:"hey checklist bot"
       assistant:'hey, what's up?'
-      u : 'begin action lawn mowing'
+      u : 'begin action 
+      a : "what are you doing?"
+      u : 'lawn mowing'
       a : 'great!'
       a : Remember, 
           - Put the mower away when you're done
           - Spray the mower with water
 
-      a : would you like to repeat these reminders?
-
-      u: No
-
-  - Pu
-
 # Webhook
-  ☐ Angular App to manage/create reminders
   
   Create Azure subscription
 
@@ -48,5 +42,19 @@ Action:
   Test it
 
 
+Features:
+- [] Create Task from webapp, invoke it from a voice command. 
+
+  - [] Create a UI to allow users to register with their Google Accounts (Due date:Tuesday July 13th 2021)
+
+    - [] Figure out how to link google account to Actions Project
+
+    - [] Create UI to link google account with Actions Project
+
+    - [] In the Action webhook call, log out an email or session id to be able to identify the user with. 
+
+  - [] Create UI to allow users to create Tasks, checklists
+
+  
     
 
